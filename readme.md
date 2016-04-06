@@ -10,16 +10,28 @@ cordova plugin add https://github.com/deep113/cordova-pluign-dyd.git
 
 Include this library in your project using gradle.
 
+// Allow plugins to declare Maven dependencies via build-extras.gradle. 
+
+#Step 1
+
+// repositories { mavenCentral() } Added to New line
+
 repositories {
   maven {
     url "https://jitpack.io"
   }
 }
 
+
+
+#Step 2
+
+// dependencies { compile fileTree(dir: 'libs', include: '*.jar')  } Added to New line
+
+
 dependencies {
   compile 'com.github.darsh2:MultipleImageSelect:v0.0.3'
 }
-
 
 
 
@@ -41,6 +53,8 @@ function failCallback(error){
 console.log(error);
 
 }
+
+
 
 #Note
 
