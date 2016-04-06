@@ -1,11 +1,11 @@
-cordova-pluign-dyd
-Cordova Plugin For Multiple Image Selection - implemented for Android.
+#cordova-pluign-dyd
+#Cordova Plugin For Multiple Image Selection - implemented for Android.
 
-Installing the plugin
+#Installing the plugin
 
 cordova plugin add https://github.com/deep113/cordova-pluign-dyd.git
 
-Usage
+#Usage
 Include this library in your project using gradle (thanks to JitPack.io).
 
 repositories {
@@ -17,7 +17,8 @@ repositories {
 dependencies {
   compile 'com.github.darsh2:MultipleImageSelect:v0.0.3'
 }
-In project's AndroidManifest.xml, add the following under application node:
+
+#In project's AndroidManifest.xml, add the following under application node:
 
 <activity
   android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity"
@@ -28,7 +29,7 @@ In project's AndroidManifest.xml, add the following under application node:
 </activity>
 
 
-Example:-
+#Example:-
 
       dyd.getmultipleimages(completeCallback,failCallback,1000);
         function completeCallback(imgselcresults){
