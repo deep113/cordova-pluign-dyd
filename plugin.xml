@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.dydplugin.dyd"
+  version="1.0.0">
+
+	<name>Dyd Custom Multiple Image Picker</name>
+	 
+	<description>
+		This plugin allows Multiple Image Picker
+	</description>
+	
+	
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+  
+  <asset src="www/dyd.js" target="js/dyd.js"/>
+
+  <js-module src="www/dyd.js" name="dyd">
+    <clobbers target="dyd" />
+  </js-module>
+	
+<platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Dyd">
+        <param name="android-package" value="com.dydplugin.plugin.Dyd"/>
+      </feature>
+    </config-file>
+	<config-file target="AndroidManifest.xml" parent="/manifest/application">
+	  <activity android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity" android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+	</config-file>
+    <source-file src="src/android/Dyd.java" target-dir="src/com/dydplugin/plugin/"/>
+</platform>
+
+
+</plugin>
