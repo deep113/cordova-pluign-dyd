@@ -25,13 +25,21 @@ dependencies {
 
 #Example
 
+
 dyd.getmultipleimages(completeCallback,failCallback,1000);
 
+
 function completeCallback(imgselcresults){
+
 console.log(imgselcresults);
+
 }
+
+
 function failCallback(error){
+
 console.log(error);
+
 }
 
 #Note
