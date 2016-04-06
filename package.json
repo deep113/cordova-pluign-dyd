@@ -1,0 +1,31 @@
+{
+  "name": "cordova-pluign-dyd",
+  "version": "1.0.0",
+  "description": "\r\n\t\tThis plugin allows Multiple Image Picker\r\n\t",
+  "cordova": {
+    "id": "com.dydplugin.dyd",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deep113/cordova-pluign-dyd.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "Deepak Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deep113/cordova-pluign-dyd/issues"
+  },
+  "homepage": "https://github.com/deep113/cordova-pluign-dyd#readme"
+}
